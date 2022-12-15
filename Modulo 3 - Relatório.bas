@@ -1,4 +1,4 @@
-Attribute VB_Name = "MÛdulo2"
+Attribute VB_Name = "M√≥dulo2"
 Sub relatorio()
 
 Dim base As Object
@@ -7,19 +7,19 @@ Dim relatorio As Object
 
 
 
-'-------------------------IntroduÁ„o-----------------------'
+'-------------------------Introdu√ß√£o-----------------------'
 
-'Esse programa consiste em uma sequencia de passos lÛgicos:
+'Esse programa consiste em uma sequencia de passos l√≥gicos:
 
 '1. Procurar e abrir o caminho do relatorio;
-'2. Apagar todos os valores j· existentes;
+'2. Apagar todos os valores j√° existentes;
 '3. Importar todos os dados da base;
 '4. Formatar a planilha de relatorio;
 
 
 '-------------------------------------------------------------
 
-'Desativando as atualizaÁıes de tela
+'Desativando as atualiza√ß√µes de tela
 Application.ScreenUpdating = False
 Application.Calculation = xlCalculationManual
 Application.EnableEvents = False
@@ -27,12 +27,12 @@ Application.EnableEvents = False
 Sheets("Base").Activate
 
 'LOCALIZANDO E ABRINDO O ARQUIVO
-caminho = "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\11. Anexo relaÁ„o semanal Canal MPME.xlsx"
+caminho = "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\11. Anexo rela√ß√£o semanal Canal MPME.xlsx"
 Workbooks.Open (caminho)
 
 
-'DELETANDO OS DADOS J¡ EXISTENTES E FORMATANDO
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+'DELETANDO OS DADOS J√Å EXISTENTES E FORMATANDO
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("A:ZA").Select
     Selection.Delete
 
@@ -43,7 +43,7 @@ Sheets("Base").Activate
     Columns("A:A").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("A:A").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -55,7 +55,7 @@ Sheets("Base").Activate
     Columns("B:B").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("B:B").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -67,7 +67,7 @@ Sheets("Base").Activate
     Columns("C:C").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("C:C").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -79,7 +79,7 @@ Sheets("Base").Activate
     Columns("E:E").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("D:D").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -91,7 +91,7 @@ Sheets("Base").Activate
     Columns("F:F").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("E:E").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -103,7 +103,7 @@ Sheets("Base").Activate
     Columns("G:G").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("F:F").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -114,7 +114,7 @@ Sheets("Base").Activate
     Columns("H:H").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("G:G").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -126,7 +126,7 @@ Sheets("Base").Activate
     Columns("K:K").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("H:H").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -138,7 +138,7 @@ Sheets("Base").Activate
     Columns("O:O").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("I:I").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -150,7 +150,7 @@ Sheets("Base").Activate
     Columns("L:L").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("J:J").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -162,7 +162,7 @@ Sheets("Base").Activate
     Columns("M:M").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("K:K").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -174,7 +174,7 @@ Sheets("Base").Activate
     Columns("V:V").Select
     Selection.Copy
 
-Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
+Windows("11. Anexo rela√ß√£o semanal Canal MPME").Activate
     Columns("L:L").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
             :=False, Transpose:=False
@@ -183,7 +183,7 @@ Windows("11. Anexo relaÁ„o semanal Canal MPME").Activate
 'FORMATANDO OS DADOS
     Range("A1:L1").Font.Bold = True 'Adicionando negrito'
     Range("A1:L1").Interior.ColorIndex = 23 'Pintar o cabecario de azul'
-    Columns("A:L").AutoFit 'Ajustando o tamanho das cÈlulas no relatorio'
+    Columns("A:L").AutoFit 'Ajustando o tamanho das c√©lulas no relatorio'
     Columns("F:F").NumberFormat = "00"".""000"".""000""/""0000""-""00" 'Formatando CNPJ
     Columns("E:E").NumberFormat = "000"".""000"".""000""-""00" 'Formatando CPF
     Columns("I:I").NumberFormat = "dd/mm/yy" 'Formatando a data br'
@@ -231,7 +231,7 @@ ActiveWorkbook.Save
 ActiveWorkbook.Close
 
 
-'Ativando a atualizaÁ„o de tela
+'Ativando a atualiza√ß√£o de tela
 caminho = Null
 
 Application.ScreenUpdating = True
@@ -244,9 +244,3 @@ MsgBox ("Processo terminado. Planilha pronta")
 
     
 End Sub
-
-
-
-
-
-

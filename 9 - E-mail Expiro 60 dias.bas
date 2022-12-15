@@ -1,7 +1,7 @@
-Attribute VB_Name = "Módulo8"
+Attribute VB_Name = "MÃ³dulo8"
 Sub Expiro_60D()
 
-decisao = MsgBox("Deseja Enviar os Emails e ENCERRAR as operações?", vbYesNo)
+decisao = MsgBox("Deseja Enviar os Emails e ENCERRAR as operaÃ§Ãµes?", vbYesNo)
 
 If decisao <> 6 Then
     Exit Sub
@@ -37,16 +37,16 @@ While I <= Ultima_linha
     'EMAIL RURAL
     If Cells(I, 22).Value = "EM_ANALISE" And Cells(I, 18).Value >= 60 And Cells(I, 20).Value = 1 Then
         With Novo_Email
-            .SentOnBehalfOfName = "Desenvolvimento_Canalmpme@banrisul.com.br"
+            .SentOnBehalfOfName = "caixa de saÃ­da"
             .display
             assinatura = Novo_Email.HTMLBody
             .To = Cells(I, 4).Value
             .CC = ""
             .Subject = "CANAL MPME - BNDES PROTOCOLO: " & Cells(I, 5).Value
             .HTMLBody = saudacao & "<br>" & "<br>" _
-            & "<font color=""#007FFF"" size=""4"">Prezados(as), informamos que devido à <b> ausência de retornos </b> a solicitação supracitada expirou-se nesta data. </font>" _
+            & "<font color=""#007FFF"" size=""4"">Prezados(as), informamos que devido Ã  <b> ausÃªncia de retornos </b> a solicitaÃ§Ã£o supracitada expirou-se nesta data. </font>" _
             & "<br>" & "<br>" _
-            & "<font color=""#007FFF"" size=""4""> Para fins de esclarecimento, a agência possui a liberdade para dar início, seguimento ou recusar a solicitação normalmente após o término do prazo estabelecido pelo Canal MPME - BNDES.</font>" _
+            & "<font color=""#007FFF"" size=""4""> Para fins de esclarecimento, a agÃªncia possui a liberdade para dar inÃ­cio, seguimento ou recusar a solicitaÃ§Ã£o normalmente apÃ³s o tÃ©rmino do prazo estabelecido pelo Canal MPME - BNDES.</font>" _
             & "<br>" & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> ID BNDES: </b> </font>" & Cells(I, 5).Value & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> Lead: </b> </font>" & Cells(I, 8).Value _
@@ -55,8 +55,8 @@ While I <= Ultima_linha
             & "<font color=""#007FFF"" size=""4""> <b> Telefone: </b> </font>" & Cells(I, 10) & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> E-mail: </b> </font>" & Cells(I, 9).Value _
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Valor solicitado R$: </b> </font>" & Cells(I, 11).Value _
-            & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Descrição do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
-            & "<font color=""#007FFF"" size=""4""> <b> Linha de Crédito Sugerida: </b> </font>" & Cells(I, 13).Value _
+            & "<br>" & "<font color=""#007FFF"" size=""4""> <b> DescriÃ§Ã£o do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
+            & "<font color=""#007FFF"" size=""4""> <b> Linha de CrÃ©dito Sugerida: </b> </font>" & Cells(I, 13).Value _
             & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO - DESENVOLVIMENTO_CANALMPME@BANRISUL.COM.BR" _
             & "<br>" & assinatura
             .Send
@@ -69,17 +69,17 @@ While I <= Ultima_linha
     'EMAIL PJ
     ElseIf Cells(I, 22).Value = "EM_ANALISE" And Cells(I, 18).Value >= 60 And Cells(I, 6).Value = "" Then
         With Novo_Email
-            .SentOnBehalfOfName = "Desenvolvimento_Canalmpme@banrisul.com.br"
+            .SentOnBehalfOfName = "caixa de saÃ­da"
             .display
             assinatura = Novo_Email.HTMLBody
             .To = Cells(I, 4).Value
             .CC = ""
             .Subject = "CANAL MPME - BNDES PROTOCOLO: " & Cells(I, 5).Value
-            .HTMLBody = "<font  size=""4"">Att Administração Agência" & "<br>" & "A/C Gerente Geral e/ou Gerente de Negócios" & "<br>" & "<br>" _
+            .HTMLBody = "<font  size=""4"">Att AdministraÃ§Ã£o AgÃªncia" & "<br>" & "A/C Gerente Geral e/ou Gerente de NegÃ³cios" & "<br>" & "<br>" _
             & saudacao & "<br>" & "<br>" _
-            & "<font color=""#007FFF"" size=""4"">Prezados(as), informamos que devido à <b> ausência de retornos </b> a solicitação supracitada expirou-se nesta data. </font>" _
+            & "<font color=""#007FFF"" size=""4"">Prezados(as), informamos que devido Ã  <b> ausÃªncia de retornos </b> a solicitaÃ§Ã£o supracitada expirou-se nesta data. </font>" _
             & "<br>" & "<br>" _
-            & "<font color=""#007FFF"" size=""4""> Para fins de esclarecimento, a agência possui a liberdade para dar início, seguimento ou recusar a solicitação normalmente após o término do prazo estabelecido pelo Canal MPME - BNDES.</font>" _
+            & "<font color=""#007FFF"" size=""4""> Para fins de esclarecimento, a agÃªncia possui a liberdade para dar inÃ­cio, seguimento ou recusar a solicitaÃ§Ã£o normalmente apÃ³s o tÃ©rmino do prazo estabelecido pelo Canal MPME - BNDES.</font>" _
             & "<br>" & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> ID BNDES: </b> </font>" & Cells(I, 5).Value & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> Empresa: </b> </font>" & Cells(I, 8).Value _
@@ -87,8 +87,8 @@ While I <= Ultima_linha
             & "<font color=""#007FFF"" size=""4""> <b> Telefone: </b> </font>" & Cells(I, 10) & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> E-mail: </b> </font>" & Cells(I, 9).Value _
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Valor solicitado R$: </b> </font>" & Cells(I, 11).Value _
-            & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Descrição do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
-            & "<font color=""#007FFF"" size=""4""> <b> Linha de Crédito Sugerida: </b> </font>" & Cells(I, 13).Value _
+            & "<br>" & "<font color=""#007FFF"" size=""4""> <b> DescriÃ§Ã£o do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
+            & "<font color=""#007FFF"" size=""4""> <b> Linha de CrÃ©dito Sugerida: </b> </font>" & Cells(I, 13).Value _
             & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO - DESENVOLVIMENTO_CANALMPME@BANRISUL.COM.BR" _
             & "<br>" & assinatura
             .Send
@@ -101,17 +101,17 @@ While I <= Ultima_linha
     'Email PF
     ElseIf Cells(I, 22).Value = "EM_ANALISE" And Cells(I, 18).Value >= 60 And Cells(I, 6).Value <> "" Then
         With Novo_Email
-            .SentOnBehalfOfName = "Desenvolvimento_Canalmpme@banrisul.com.br"
+            .SentOnBehalfOfName = "caixa de saÃ­da"
             .display
             assinatura = Novo_Email.HTMLBody
             .To = Cells(I, 4).Value
             .CC = ""
             .Subject = "CANAL MPME - BNDES PROTOCOLO: " & Cells(I, 5).Value
-            .HTMLBody = "<font  size=""4"">Att Administração Agência" & "<br>" & "A/C Gerente Geral e/ou Gerente de Negócios" & "<br>" & "<br>" _
+            .HTMLBody = "<font  size=""4"">Att AdministraÃ§Ã£o AgÃªncia" & "<br>" & "A/C Gerente Geral e/ou Gerente de NegÃ³cios" & "<br>" & "<br>" _
             & saudacao & "<br>" & "<br>" _
-            & "<font color=""#007FFF"" size=""4"">Prezados(as), informamos que devido à <b> ausência de retornos </b> a solicitação supracitada expirou-se nesta data. </font>" _
+            & "<font color=""#007FFF"" size=""4"">Prezados(as), informamos que devido Ã  <b> ausÃªncia de retornos </b> a solicitaÃ§Ã£o supracitada expirou-se nesta data. </font>" _
             & "<br>" & "<br>" _
-            & "<font color=""#007FFF"" size=""4""> Para fins de esclarecimento, a agência possui a liberdade para dar início, seguimento ou recusar a solicitação normalmente após o término do prazo estabelecido pelo Canal MPME - BNDES.</font>" _
+            & "<font color=""#007FFF"" size=""4""> Para fins de esclarecimento, a agÃªncia possui a liberdade para dar inÃ­cio, seguimento ou recusar a solicitaÃ§Ã£o normalmente apÃ³s o tÃ©rmino do prazo estabelecido pelo Canal MPME - BNDES.</font>" _
             & "<br>" & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> ID BNDES: </b> </font>" & Cells(I, 5).Value & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> Lead: </b> </font>" & Cells(I, 8).Value _
@@ -119,8 +119,8 @@ While I <= Ultima_linha
             & "<font color=""#007FFF"" size=""4""> <b> Telefone: </b> </font>" & Cells(I, 10) & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> E-mail: </b> </font>" & Cells(I, 9).Value _
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Valor solicitado R$: </b> </font>" & Cells(I, 11).Value _
-            & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Descrição do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
-            & "<font color=""#007FFF"" size=""4""> <b> Linha de Crédito Sugerida: </b> </font>" & Cells(I, 13).Value _
+            & "<br>" & "<font color=""#007FFF"" size=""4""> <b> DescriÃ§Ã£o do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
+            & "<font color=""#007FFF"" size=""4""> <b> Linha de CrÃ©dito Sugerida: </b> </font>" & Cells(I, 13).Value _
             & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO - DESENVOLVIMENTO_CANALMPME@BANRISUL.COM.BR" _
             & "<br>" & assinatura
             .Send
@@ -139,7 +139,7 @@ Application.Calculation = xlCalculationAutomatic
 Application.EnableEvents = True
 
 Sheets("Index").Activate
-MsgBox ("Emails enviados, operação finalizada.")
+MsgBox ("Emails enviados, operaÃ§Ã£o finalizada.")
 
 End Sub
 

@@ -28,7 +28,7 @@ Application.EnableEvents = False
 Sheets("Estatisticas").Activate
 
 With Novo_Email
-    .SentOnBehalfOfName = "Desenvolvimento_Canalmpme@banrisul.com.br"
+    .SentOnBehalfOfName = "caixa de saída"
     .display
     assinatura = Novo_Email.HTMLBody
     .To = ""

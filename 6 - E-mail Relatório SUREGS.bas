@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo5"
+Attribute VB_Name = "MÃ³dulo5"
 Sub enviar_relatorio()
 
 decisao = InputBox("Tem certeza que deseja enviar os e-mails? Digite 'SIM' caso queira enviar")
@@ -31,21 +31,21 @@ With Novo_Email
     .SentOnBehalfOfName = "Desenvolvimento_Canalmpme@banrisul.com.br"
     .display
     assinatura = Novo_Email.HTMLBody
-    .To = "sureg_centro@banrisul.com.br; sureg_poacentro@banrisul.com.br; Sureg_PortoAlegre@banrisul.com.br; SUREG_Leste@banrisul.com.br; Sureg_Alto_Uruguai@banrisul.com.br; SurSerra@banrisul.com.br; sursul@banrisul.com.br; sureg_noroeste@banrisul.com.br; sureg_fronteira@banrisul.com.br; soestados@banrisul.com.br"
-    .CC = "tiago_fernandes@banrisul.com.br; kelen_ferreira@banrisul.com.br; Ariel_Sturmer@banrisul.com.br; Vicente_Reis@banrisul.com.br; Carlos_Nunez@banrisul.com.br; katia_hansen@banrisul.com.br; Desenvolvimento_Analise@banrisul.com.br; Desenvolvimento_Acompanhamento@banrisul.com.br"
+    .To = ""
+    .CC = ""
     .BCC = ""
-    .Subject = "Relação semanal - Canal MPME e Cartão BNDES"
-    .attachments.Add "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\11. Anexo relação semanal Canal MPME.xlsx"
-    .attachments.Add "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\12. Anexo relação semanal Cartão BNDES.xlsx"
+    .Subject = "RelaÃ§Ã£o semanal - Canal MPME e CartÃ£o BNDES"
+    .attachments.Add "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\11. Anexo relaÃ§Ã£o semanal Canal MPME.xlsx"
+    .attachments.Add "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\12. Anexo relaÃ§Ã£o semanal CartÃ£o BNDES.xlsx"
     .HTMLBody = saudacao _
     & "<br>" & "<br>" _
-    & "<font size = ""3"" color=""#303E84""> Prezados (as), abaixo seguem três tabelas contendo as informações referentes ao Canal MPME: A primeira com as operações recebidas pelo CANAL MPME - BNDES na última semana, com o tipo de operação, valores, quantidade de propostas e ticket médio. A segunda com TODAS as operações recebidas desde o início do ano, e a última contendo as operações contratadas. Encaminharemos essas informações semanalmente para conhecimento. </font>" _
+    & "<font size = ""3"" color=""#303E84""> Prezados (as), abaixo seguem trÃªs tabelas contendo as informaÃ§Ãµes referentes ao Canal MPME: A primeira com as operaÃ§Ãµes recebidas pelo CANAL MPME - BNDES na Ãºltima semana, com o tipo de operaÃ§Ã£o, valores, quantidade de propostas e ticket mÃ©dio. A segunda com TODAS as operaÃ§Ãµes recebidas desde o inÃ­cio do ano, e a Ãºltima contendo as operaÃ§Ãµes contratadas. Encaminharemos essas informaÃ§Ãµes semanalmente para conhecimento. </font>" _
     & "<br>" & "<br>" _
-    & "<font size = ""3"" color=""#303E84""> Segue em anexo, para consulta, as operações e seus respectivos status provenientes do canal MPME. </font>" _
+    & "<font size = ""3"" color=""#303E84""> Segue em anexo, para consulta, as operaÃ§Ãµes e seus respectivos status provenientes do canal MPME. </font>" _
     & "<br>" & "<br>" _
-    & "<font size = ""3"" color=""#303E84""> Incluímos, também, em outro anexo, o arquivo importado diariamente do BNDES, de clientes e não clientes, com novas solicitações de Cartão BNDES que poderão ser analisadas pelas agências. </font>" _
+    & "<font size = ""3"" color=""#303E84""> IncluÃ­mos, tambÃ©m, em outro anexo, o arquivo importado diariamente do BNDES, de clientes e nÃ£o clientes, com novas solicitaÃ§Ãµes de CartÃ£o BNDES que poderÃ£o ser analisadas pelas agÃªncias. </font>" _
     & "<br>" & "<br>" _
-    & "<font size = ""3"" color=""#303E84""> Os novos pedidos podem ser pesquisados no sistema do Cartão BNDES > Solicitações > Consultar Solicitação de Cartão > Processo ou CNPJ ou Etapa 01 ou Etapa 02. </font>" _
+    & "<font size = ""3"" color=""#303E84""> Os novos pedidos podem ser pesquisados no sistema do CartÃ£o BNDES > SolicitaÃ§Ãµes > Consultar SolicitaÃ§Ã£o de CartÃ£o > Processo ou CNPJ ou Etapa 01 ou Etapa 02. </font>" _
     & "<br>" & "<br>" _
     & RangetoHTML(Range("A1:E10")) _
     & "<br>" & "<br>" _
@@ -62,7 +62,7 @@ Application.Calculation = xlCalculationAutomatic
 Application.EnableEvents = True
 
 
-MsgBox ("Relatórios enviados com sucesso, verifique a parta 'enviados' na sua caixa de e-mail")
+MsgBox ("RelatÃ³rios enviados com sucesso, verifique a parta 'enviados' na sua caixa de e-mail")
 
 End Sub
 

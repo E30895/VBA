@@ -2,7 +2,7 @@
 
 ## Sobre o repositório
 
-Esse repositório é destinado ao projeto "BNDES MPME" desenvolvido em meu último estágio.
+Esse repositório é destinado ao projeto "BNDES MPME" desenvolvido utilizando o VBA em meu último estágio.
 
 ## O projeto
 

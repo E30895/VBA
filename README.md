@@ -10,6 +10,6 @@ O projeto consiste em um sistema em VBA para gerenciar operações do canal BNDE
 
 São 10 módulos independentes automatizando todas as tarefas manuais:
 
--Automação de relatórios;
--Automação de e-mails;
--Automação web;
+- Automação de relatórios;
+- Automação de e-mails;
+- Automação web;

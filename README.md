@@ -17,6 +17,9 @@ a) 10 módulos independentes automatizando todas as tarefas manuais
 - Automação de e-mails;
 - Automação web;
 
+![image](https://user-images.githubusercontent.com/99520642/208807801-06643790-120f-437d-8dd9-27b3d218480e.png)
+
+
 b) 1 (um) forms implementando interface gráfica p/ visualização das operações
 
 ![image](https://user-images.githubusercontent.com/99520642/208806882-42f12377-8df1-44ed-8a55-791c266c57ec.png)

@@ -6,10 +6,16 @@ Esse repositório é destinado ao projeto "BNDES MPME" desenvolvido em meu últi
 
 ## O projeto
 
-O projeto consiste em um sistema em VBA para gerenciar operações do canal BNDES MPME. 
+O projeto consiste em um sistema em VBA para gerenciar operações do canal BNDES MPME.
 
-São 10 módulos independentes automatizando todas as tarefas manuais:
+O sistema é composto por:
+
+a) 10 módulos independentes automatizando todas as tarefas manuais:
 
 - Automação de relatórios;
 - Automação de e-mails;
 - Automação web;
+
+b) 1 (um) forms implementando interface gráfica p/ visualização das operações:
+
+![image](https://user-images.githubusercontent.com/99520642/208806882-42f12377-8df1-44ed-8a55-791c266c57ec.png)

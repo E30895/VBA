@@ -71,7 +71,7 @@ While I <= Ultima_linha
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Valor solicitado R$: </b> </font>" & Cells(I, 11).Value _
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Descrição do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> Linha de Crédito Sugerida: </b> </font>" & Cells(I, 13).Value _
-            & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO - DESENVOLVIMENTO_CANALMPME@BANRISUL.COM.BR" _
+            & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO -" _
             & "<br>" & assinatura
             .attachments.Add "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\Instrucoes.pdf"
             .Send
@@ -104,7 +104,7 @@ While I <= Ultima_linha
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Valor solicitado R$: </b> </font>" & Cells(I, 11).Value _
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Descrição do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> Linha de Crédito Sugerida: </b> </font>" & Cells(I, 13).Value _
-            & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO - DESENVOLVIMENTO_CANALMPME@BANRISUL.COM.BR" _
+            & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO -" _
             & "<br>" & assinatura
             .attachments.Add "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\Instrucoes.pdf"
             .Send
@@ -138,7 +138,7 @@ While I <= Ultima_linha
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Valor solicitado R$: </b> </font>" & Cells(I, 11).Value _
             & "<br>" & "<font color=""#007FFF"" size=""4""> <b> Descrição do solicitado: </b> </font>" & Cells(I, 12) & "<br>" _
             & "<font color=""#007FFF"" size=""4""> <b> Linha de Crédito Sugerida: </b> </font>" & Cells(I, 13).Value _
-            & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO - DESENVOLVIMENTO_CANALMPME@BANRISUL.COM.BR" _
+            & "<br>" & "<br>" & "<br>" & "UNIDADE DE DESENVOLVIMENTO - " _
             & "<br>" & assinatura
             .attachments.Add "I:\Desenvolvimento-GAA\GAA\CANAL MPME - COMPLEMENTARES\Instrucoes.pdf"
             .Send
